@@ -167,27 +167,24 @@
         <div class="init-container">
             <div class="uno">
                 <img src="img/logo.jpg" alt="logo">
-                <p>Crear nuevo usuario</p>
+                <p>Envianos Tu Receta Favorita</p>
             </div>
             <form id="registration-form" action="\" class="form">
 
                 <div>
-                    <label for="name" class="label">Nombre</label>
-                    <input type="text" id="name" placeholder="Coloque su nombre" class="input input-name">
+                    <label for="name" class="label">Nom_Receta</label>
+                    <input type="text" id="Nom_Receta" placeholder="Ingrese el  nombre" class="input input-name">
 
-                    <label for="lasta-name" class="label">Apellidos</label>
-                    <input type="text" id="apellido" placeholder="Coloque sus apellidos" class="input input-last-name">
+                    <label for="Ingredientes" class="label">Ingredientes</label>
+                    <input type="text" id="Ingredientes" placeholder="Ingrese los ingredientes" class="input input-Ingredientes">
 
-                    <label for="email" class="label">Correo Electronico</label>
-                    <input type="text" id="email" placeholder="Coloque su Email" class="input input-email">
+                    <label for="Pasos" class="label">Pasos</label>
+                    <input type="text" id="Pasos" placeholder="Ingrese los pasos" class="input input-Pasos">
 
-                    <label for="password" class="label">Contrasenia</label>
-                    <input type="password" id="password" placeholder="Coloque su contrasenia"
-                        class="input input-password">
 
                 </div>
 
-                <input type="submit" value="Crear" class="primary-botton login-botton ">
+                <input type="submit" value="ENVIAR" class="primary-botton login-botton ">
             </form>
         </div>
 
@@ -199,30 +196,34 @@
         form.addEventListener("submit", function (event) {
             event.preventDefault();
             // Validar los campos del formulario
-            const name = document.getElementById("name").value;
-            const last_name = document.getElementById("apellido").value;
-            const email = document.getElementById("email").value;
-            const password = document.getElementById("password").value;
+            const name = document.getElementById("Nom_Receta").value;
+            const Ingredientes = document.getElementById("Ingredientes").value;
+            const Pasos = document.getElementById("Pasos").value;
+            
             // Validar que los campos no estén vacíos
-            if (name.trim() === "" || last_name.trim() === "" || email.trim() === "" || password.trim() === "") {
+            if (name.trim() === "" || Ingredientes.trim() === "" || Pasos.trim() === "" ) {
                 alert("Existen campos vacios");
                 return;
             }
             // Validar el formato del correo electrónico
-            if (!isValidEmail(email)) {
-                alert("Por favor, ingrese una dirección de correo electrónico válida.");
-                return;
-            }
+           // if (!isValidEmail(email)) {
+           //     alert("Por favor, ingrese una dirección de correo electrónico válida.");
+           //     return;
+           // }
+
             // Confirmamos que el usuario fue creado con exito
-            const successMessage = `Gracias por completar el formulario, usuario "${name} ${last_name}" creado con éxito.`;
+            const successMessage = `Gracias por agregar tu Receta de: ${name} a nuestro catalogo.`;
             alert(successMessage);
             form.reset();
         });
-        function isValidEmail(email) {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return emailRegex.test(email);
-        }
+       // function isValidEmail(email) {
+         //   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+         //   return emailRegex.test(email);
+       // } 
     });
+
+
+
 </script>
 
 </html>
