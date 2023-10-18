@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"
+    type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="js/index.js"></script>
+  <title>Salleisany</title>
+</head>
+
+<body>
+  <div class="head">
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.jpg" alt="Básquet"></a>
+    </div>
+    <nav class="barra_navegacion">
+      <a class="active" href="index.html">Inicio</a>
+      <a href="foro.html">Foro</a>
+      <a href="paginaCreateUser-grupo5.html">Log In</a>
+    </nav>
+  </div>
+
+  <header class="contenido_introduccion header">
+    <h1 class="introduccion">Salleisany</h1>
+    <h3 class="eslogan">Deliciosas Recetas: Sabores que Inspiran tu Cocina!</h3>
+  </header>
+
+  <section class="encabezado">
+    <div class="navbar">
+        <ul class="navbar">
+            <li><a href="#Inicio" >Inicio</a></li>
+            <li><a href="#Recetas">Recetas</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="content pagina_inicio">
+    <h1 id=Inicio class="titulos">Incio</h1>
+    <h5 class="titulo-informacion">
+      <p>¡Bienvenidos a la Universidad de Delicias Culinarias! Nuestra página web de recetas es el lugar perfecto para explorar y aprender sobre la diversidad de la cocina. Desde platos clásicos hasta creaciones innovadoras, te invitamos a descubrir el mundo de la gastronomía a través de las recetas elaboradas por nuestros talentosos estudiantes y chefs. Prepárate para un viaje culinario que despertará tus sentidos y te inspirará a experimentar en la cocina. ¡Comencemos!</p>
+        <br>
+      <p>Dentro de nuestra sección de recetas, te sumergirás en un mundo de sabores, ingredientes y técnicas culinarias. Aquí encontrarás una amplia variedad de recetas cuidadosamente seleccionadas, desde platos clásicos que te harán sentir como en casa, hasta creaciones culinarias vanguardistas que desafiarán tu paladar. Nuestros estudiantes y chefs comparten su pasión por la cocina a través de instrucciones detalladas y consejos expertos. Sea que seas un principiante o un chef experimentado, nuestras recetas te guiarán en un viaje culinario emocionante. ¡Prepárate para cocinar, degustar y disfrutar de cada bocado!</p>
+    </h5>
+    <br><br>
+    <h1 class="titulos">Historia Culinaria</h1>
+    <h5 class="titulo-informacion">
+      <p>La historia culinaria de Ecuador es una mezcla de tradiciones indígenas, españolas y africanas que se han
+        fusionado
+        a lo largo de los siglos para dar lugar a una gastronomía única y deliciosa.</p>
+      <br>
+      <p><b>Época Precolombina:</b> Antes de la llegada de los colonizadores españoles, las civilizaciones indígenas
+        como los Incas,
+        los Cañaris y los Quitus ya habían desarrollado una rica cultura gastronómica en lo que hoy es Ecuador. Estas
+        culturas
+        cultivaban maíz, papas, yuca, quinua, amaranto y otros productos agrícolas que se convertirían en ingredientes
+        fundamentales
+        de la cocina ecuatoriana.</p>
+    </h5>
+    <br>
+  </div>
+  </section>
+  <section class="list-container">
+    <div class="form-container">
+      <h1 class="titulos">Encuesta</h1>
+      <h6 class="subtitulos">Comparte tu opinion, sería valioso para seguir mejorando</h6>
+      <form id="survey-form" class="centrado">
+
+        <label for="nombre" class="label">Ingrese su nombre y apellido:</label>
+        <input type="text" class="form-control" id="nombre">
+
+        <label for="edad" class="label">Edad:</label>
+        <input type="number" class="form-control" id="edad">
+
+        <label for="opinion" class="label">Opinión:</label>
+        <textarea class="form-control" id="opinion" rows="3"></textarea>
+
+        <label for="enlace" class="label">Enlaces de Tiktok o Instagram:</label>
+        <input type="text" class="form-control" id="enlace">
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+    <div id="contacto" class="contact-div">
+      <h2 class="txt-contact">Contáctenos</h2>
+      <p>¿Tienes alguna pregunta o comentario? No dudes en ponerte en contacto con nosotros! </p>
+      <details>
+        <div class="content-contact">
+          <form id="contact-us-form" action="\" class="contact-form">
+
+            <label for="nombre" class="label">Nombre:</label>
+            <input class="form-control" type="text" id="nombre" name="nombre" required>
+
+            <label for="email" class="label">Email:</label>
+            <input class="form-control" type="email" id="email" name="email" required>
+
+            <label for="mensaje" class="label">Mensaje:</label>
+            <textarea id="mensaje" class="form-control" name="mensaje" required></textarea>
+
+            <button class="btn" onclick="guardarDatos()" type="button">Enviar</button>
+
+          </form>
+        </div>
+    </div>
+  </section>
+  <footer class="footer-names">
+    <div class="info-personal">
+
+      <div class="integrantes-name">
+        <div class="name-div">
+          <h1 id="contactos">Desarrollado por:</h1>
+          <p>Juan Uzhca</p>
+          <p>Erika Contreras</p>
+        </div>
+        <div class="name-div">
+          <h1>Contactanos:</h1>
+          <p>Telf/Cel: 0987654321</p>
+          <p>Calle nueva 3,15 calle vieja</p>
+          <p>Cuenca, Ecuador</p>
+        </div>
+      </div>
+      <div class="links">
+        <a href="https://www.facebook.com/groups/ups.ecuador/" class="icon-link">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.ups.edu.ec/" class="icon-link">
+          <i class="fab fa-chrome"></i>
+        </a>
+        <a href="https://www.instagram.com/upsalesianaec/" class="icon-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script>
+  function guardarDatos() {
+
+    var nombre = document.getElementById('nombre').value;
+    var email = document.getElementById('email').value;
+    var mensaje = document.getElementById('mensaje').value;
+
+
+    alert("Los datos se han guardado correctamente:\n\nNombre: " + nombre + "\nEmail: " + email + "\nMensaje: " + mensaje);
+
+    document.getElementById('nombre').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('mensaje').value = '';
+
+  }
+</script>
+
+</html>
