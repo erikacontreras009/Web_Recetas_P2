@@ -499,3 +499,50 @@ ul.navbar li a:hover {
     background-color: #ddd;
     color: black;
 }
+
+
+.barraBusqueda{
+    text-align: center;
+}
+/* para definir el tamanio y estilo de la bara de busqueda */
+.barraBuscar {
+    display: Center;
+    text-align: center;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 200px;
+  }
+
+  /* Estilo para el botón */
+
+
+  /* Estilo para un botón moderno */
+.botonBuscar {
+    display: inline-block;
+    padding: 12px 24px; /* Ajusta el tamaño del botón */
+    background-color: #abf5ad; /* Color de fondo */
+    color: #545353; /* Color del texto */
+    border: none;
+    border-radius: 6px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Efecto de transición suave */
+    padding-top: 12px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cambia el estilo del botón al pasar el mouse sobre él */
+  .botonBuscar:hover {
+    background-color: #55c45b; /* Cambia el color de fondo al pasar el mouse */
+  }
+  
+  /* Estilo para un botón en estado inactivo o deshabilitado */
+
+  
+  
